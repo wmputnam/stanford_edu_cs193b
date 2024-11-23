@@ -12,11 +12,15 @@ struct ContentView: View {
     // HStack: side to side, horizontal
     // ZStack: direction towards the user
     var body: some View {
+        // Array<String> same as [String]
+        let emojis: Array<String> = ["👻", "🎃", "🕷", "😈"]
         HStack{
-            CardView(isFaceUp: true)
-            CardView()
-            CardView()
-            CardView()
+            // ... means includes 4, ..< means 4 is not include
+            // we can use forEach(0..<4) as well
+            ForEach(emojis.indices, id: \.self){
+                index in
+                CardView(content: emojis[index])
+            }
         }
         .foregroundColor(.orange)
         .padding()
@@ -24,7 +28,8 @@ struct ContentView: View {
 }
 
 struct CardView: View{
-    @State var isFaceUp: Bool = false
+    let content: String
+    @State var isFaceUp: Bool = true
     
     var body: some View {
         // type inference
@@ -40,8 +45,8 @@ struct CardView: View{
             }
         }
         .onTapGesture{
-                    isFaceUp.toggle() // for bool, f to t, t to f
-                }
+            isFaceUp.toggle() // for bool, f to t, t to f
+        }
     }
 }
 struct ContentView_Previews: PreviewProvider {
