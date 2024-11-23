@@ -14,6 +14,7 @@ struct ContentView: View {
     // Array<String> same as [String]
     let emojis: Array<String> = ["👻", "🎃", "🕷", "😈", "👾", "👁", "🧛🏼", "👺"]
     // @State不能在body里面声明，因为是用来管理View的状态
+    // @State can't be declared in the body, because it's used to manage the state of the view
     @State var cardCount: Int = 4
     var body: some View {
         VStack{
