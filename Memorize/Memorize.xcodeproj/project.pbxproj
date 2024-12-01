@@ -6,8 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C7C73A8D2CFABB6D007B1ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C74D2DCB2CF148450032B77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C74D2DD22CF148450032B77B;
+			remoteInfo = Memorize;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C74D2DD32CF148450032B77B /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C73A892CFABB6D007B1ADC /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C73A932CFAC09F007B1ADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7C73A952CFAC09F007B1ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7C73A962CFAC09F007B1ADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7C73A972CFAC09F007B1ADC /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
+		C7C73A982CFAC09F007B1ADC /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		C7C73A9A2CFAC0F4007B1ADC /* Memorize.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Memorize.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -19,10 +36,22 @@
 			path = Memorize;
 			sourceTree = "<group>";
 		};
+		C7C73A8A2CFABB6D007B1ADC /* MemorizeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MemorizeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C74D2DD02CF148450032B77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C73A862CFABB6D007B1ADC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				C74D2DD52CF148450032B77B /* Memorize */,
+				C7C73A8A2CFABB6D007B1ADC /* MemorizeTests */,
+				C7C73A922CFAC09F007B1ADC /* Frameworks */,
 				C74D2DD42CF148450032B77B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,7 +75,42 @@
 			isa = PBXGroup;
 			children = (
 				C74D2DD32CF148450032B77B /* Memorize.app */,
+				C7C73A892CFABB6D007B1ADC /* MemorizeTests.xctest */,
 			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7C73A922CFAC09F007B1ADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7C73A9A2CFAC0F4007B1ADC /* Memorize.xcodeproj */,
+				C7C73A992CFAC09F007B1ADC /* Memorize */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7C73A942CFAC09F007B1ADC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C7C73A932CFAC09F007B1ADC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7C73A992CFAC09F007B1ADC /* Memorize */ = {
+			isa = PBXGroup;
+			children = (
+				C7C73A942CFAC09F007B1ADC /* Preview Content */,
+				C7C73A952CFAC09F007B1ADC /* Assets.xcassets */,
+				C7C73A962CFAC09F007B1ADC /* ContentView.swift */,
+				C7C73A972CFAC09F007B1ADC /* MemorizeApp.swift */,
+				C7C73A982CFAC09F007B1ADC /* MemoryGame.swift */,
+			);
+			path = Memorize;
+			sourceTree = "<group>";
+		};
+		C7C73A9B2CFAC0F4007B1ADC /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -73,6 +139,29 @@
 			productReference = C74D2DD32CF148450032B77B /* Memorize.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C7C73A882CFABB6D007B1ADC /* MemorizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7C73A8F2CFABB6D007B1ADC /* Build configuration list for PBXNativeTarget "MemorizeTests" */;
+			buildPhases = (
+				C7C73A852CFABB6D007B1ADC /* Sources */,
+				C7C73A862CFABB6D007B1ADC /* Frameworks */,
+				C7C73A872CFABB6D007B1ADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7C73A8E2CFABB6D007B1ADC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C7C73A8A2CFABB6D007B1ADC /* MemorizeTests */,
+			);
+			name = MemorizeTests;
+			packageProductDependencies = (
+			);
+			productName = MemorizeTests;
+			productReference = C7C73A892CFABB6D007B1ADC /* MemorizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -85,6 +174,10 @@
 				TargetAttributes = {
 					C74D2DD22CF148450032B77B = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					C7C73A882CFABB6D007B1ADC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C74D2DD22CF148450032B77B;
 					};
 				};
 			};
@@ -100,15 +193,29 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C74D2DD42CF148450032B77B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C7C73A9B2CFAC0F4007B1ADC /* Products */;
+					ProjectRef = C7C73A9A2CFAC0F4007B1ADC /* Memorize.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C74D2DD22CF148450032B77B /* Memorize */,
+				C7C73A882CFABB6D007B1ADC /* MemorizeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C74D2DD12CF148450032B77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C73A872CFABB6D007B1ADC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +232,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7C73A852CFABB6D007B1ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7C73A8E2CFABB6D007B1ADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C74D2DD22CF148450032B77B /* Memorize */;
+			targetProxy = C7C73A8D2CFABB6D007B1ADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C74D2DDF2CF148470032B77B /* Debug */ = {
@@ -311,6 +433,48 @@
 			};
 			name = Release;
 		};
+		C7C73A902CFABB6D007B1ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8S6XCN88C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.alumni.wmputnam.MemorizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
+			};
+			name = Debug;
+		};
+		C7C73A912CFABB6D007B1ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8S6XCN88C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ucla.alumni.wmputnam.MemorizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +492,15 @@
 			buildConfigurations = (
 				C74D2DE22CF148470032B77B /* Debug */,
 				C74D2DE32CF148470032B77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7C73A8F2CFABB6D007B1ADC /* Build configuration list for PBXNativeTarget "MemorizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C73A902CFABB6D007B1ADC /* Debug */,
+				C7C73A912CFABB6D007B1ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
