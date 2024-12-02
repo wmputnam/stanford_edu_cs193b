@@ -21,7 +21,7 @@ class MemoryGame {
     
     var lookingForMatch = -1
     
-    init(numPairs:Int){
+    init(_ numPairs:Int){
         self.numPairs = numPairs;
         self.deck = MemoryGame.createDeck(numPairs)
     }
@@ -31,7 +31,7 @@ class MemoryGame {
     func choose(byPosition offset:Int){
         if (0..<numPairs*2) ~= offset {
             if deck[offset].faceUp == false {
-                if lookingForMatch > 0 {
+                if lookingForMatch >= 0 {
                     deck[offset].faceUp = true
                     if deck[offset].value == deck[lookingForMatch].value {
                         celebrateMatch()
@@ -45,24 +45,17 @@ class MemoryGame {
                     lookingForMatch = offset
                     deck[offset].faceUp = true
                 }
-                //            switch unCheckedFaceUp {
-                //            case 0:
-                //                deck[offset].faceUp = true
-                //            case 1:
-                //                deck[offset].faceUp = true
-                //                if deck[offset].value == deck[lookingForMatch].value {
-                //                    celebrateMatch()
-                //                } else {
-                //                    notMatch()
-                //                }
-                //            default:
-                //                pass()
-                //            }
             } else {
                 // no nothing
             }
         } else {
             fatalError("unable to choose card with offset \(offset)")
+        }
+    }
+    
+    func dumpDeck() {
+        for i in 0..<deck.count {
+            print("i: \(i), value: \(deck[i].value)")
         }
     }
     
@@ -80,13 +73,13 @@ class MemoryGame {
         for index in 0..<numPairs{
             newDeck.append(contentsOf: newPair(index))
         }
-        return newDeck
+        return newDeck.shuffled()
     }
     
     static func newPair(_ value:Int) -> [Card] {
         var cardArray:[Card] = [Card]()
-        cardArray[0] = Card(value)
-        cardArray[1] = Card(value)
+        cardArray.append( Card(value))
+        cardArray.append( Card(value))
         return cardArray
     }
     
